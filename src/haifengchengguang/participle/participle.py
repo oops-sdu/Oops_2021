@@ -8,7 +8,7 @@ from matplotlib.pyplot import imread
 from wordcloud import WordCloud
 import pandas as pd
 
-# 这个函数暂时没有用到
+
 def get_all_keywords(file_name):
     word_lists = []  # 关键词列表
     jieba.enable_parallel(8)
@@ -55,7 +55,7 @@ def draw_wordcloud2():
     with codecs.open(dirs, encoding='utf-8') as f:
         comment_text = f.read()
     #print(comment_text)
-    color_mask = imread("template.png")  # 读取背景图片
+    #color_mask = imread("template.png")  # 读取背景图片
 
     # stopwords = [u'就是', u'电影', u'你们', u'这么', u'不过', u'但是', u'什么', u'没有', u'这个', u'那个', u'大家', u'比较', u'看到', u'真是',
     #              u'除了', u'时候', u'已经', u'可以',u'在',u'了',u'的',u'是',u'就',u'但',u'也',u'让我',u'让人',u'他',u'对',u' 都',u'和',u'我']
